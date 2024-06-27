@@ -2,7 +2,7 @@
 % Please edit documentation in R/09_ASCVD-PCE_func.R
 \name{ASCVD}
 \alias{ASCVD}
-\title{ASCVD (Atherosclerotic Cardiovascular Disease) Risk Algorithm including Known ASCVD from AHA/ACC}
+\title{ASCVD (Atherosclerotic Cardiovascular Disease) Risk Algorithm including Known ASCVD from AHA/ACC function}
 \usage{
 ASCVD(
   Gender = Gender,
@@ -113,7 +113,7 @@ cohort_xx <- data.frame(
   previous.cabg = as.numeric(sample(c(0, 1), num_rows, replace = TRUE)),
   aspirin = as.numeric(sample(c(0, 1), num_rows, replace = TRUE)),
   number.of.episodes.24h = as.numeric(sample(0:20, num_rows, replace = TRUE)),
-  total.chol = as.numeric(sample(5:100, num_rows, replace = TRUE)),
+  total.chol = as.numeric(sample(2:6, num_rows, replace = TRUE)),
   total.hdl = as.numeric(sample(2:5, num_rows, replace = TRUE)),
   Ethnicity = sample(c("white", "black", "asian", "other"), num_rows, replace = TRUE)
 )

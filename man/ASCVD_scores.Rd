@@ -2,7 +2,7 @@
 % Please edit documentation in R/10_ASCVD_df.R
 \name{ASCVD_scores}
 \alias{ASCVD_scores}
-\title{ASCVD risk score function
+\title{ASCVD risk score function for data frame;
 ASCVD = Atherosclerotic Cardiovascular Disease}
 \usage{
 ASCVD_scores(
@@ -89,7 +89,7 @@ cohort_xx <- data.frame(
   previous.cabg = as.numeric(sample(c(0, 1), num_rows, replace = TRUE)),
   aspirin = as.numeric(sample(c(0, 1), num_rows, replace = TRUE)),
   number.of.episodes.24h = as.numeric(sample(0:20, num_rows, replace = TRUE)),
-  total.chol = as.numeric(sample(5:100, num_rows, replace = TRUE)),
+  total.chol = as.numeric(sample(2:6, num_rows, replace = TRUE)),
   total.hdl = as.numeric(sample(2:5, num_rows, replace = TRUE)),
   Ethnicity = sample(c("white", "black", "asian", "other"), num_rows, replace = TRUE)
 )
